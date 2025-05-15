@@ -1,0 +1,99 @@
+body {
+      background-color: #f8f9fa;
+    }
+
+    @font-face {
+      font-family: 'Patria';
+      src: url('../fonts/Patria_Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'NotoSans';
+      src: url('../fonts/NotoSans-Regular.ttf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .efeBtn{
+
+     }
+        
+
+    .efeBtn:hover {
+      filter: brightness(105%); 
+      cursor: pointer;
+      transform: scale(1.02);
+      transition: all 0.6s ease-out;
+      transition: .5s ease;
+    }
+
+    .curso-container {
+      background-image: url('../img/back.jpg');  
+      background-size: cover;
+      background-position: center;
+      max-width: 1100px;
+      min-height: 600px;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      /* border-radius: 10px; */
+    }
+
+    .overlay {
+      /* background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)); */
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      height: 100%;
+      padding: 1.5rem;
+    }
+
+    .menu-lateral {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .menu-item {
+      border-radius: 0 10px;
+      font-weight: 500;
+      text-align: center;
+      font-family: 'NotoSans';
+    }
+
+    .modulo {
+      /* background: linear-gradient(to left, rgb(255, 255, 255) 65%, rgba(255,255,255,0) 100%);*/
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      
+      font-family: 'NotoSans';
+      color: #161a1d;
+    }
+
+    .modulo h5 {
+      color: #002f2a;
+      font-family: 'Patria';
+    }
+
+    @media (max-width: 768px) {
+      .contenido {
+        flex-direction: column;
+        overflow-y: auto;
+      }
+    }
