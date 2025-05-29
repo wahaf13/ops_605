@@ -18,6 +18,13 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'NotoSans';
+    src: url('../../../assets/fonts/NotoSans-Bold.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
   .container-fluid {
     width: 100%!important;
     max-width: 1100px!important;
