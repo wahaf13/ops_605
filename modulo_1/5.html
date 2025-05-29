@@ -6,6 +6,35 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/estilo.css">
   <style>
+    .latido {
+      width: 100px;
+      height: 100px;
+      background-color: #e91e63;
+      border-radius: 50%;
+      animation: heartbeat 1s infinite;
+      margin: 50px auto;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      14% {
+        transform: scale(1.01);
+      }
+      28% {
+        transform: scale(1);
+      }
+      42% {
+        transform: scale(1.01);
+      }
+      70% {
+        transform: scale(1);
+      }
+    }
+
+    
+
     .grafico-container {
       max-width: 900px;
       margin: 0 auto;
@@ -24,6 +53,8 @@
       border-radius: 5px;
       color: white;
       font-size: 14px;
+      line-height: 1.3;
+      
     }
 
     .texto-superior {
@@ -49,6 +80,8 @@
       width: 300px;
     }
 
+     
+
   </style>
 </head>
 <body>
@@ -64,10 +97,10 @@
               La <b>Estrategia mundial para acelerar la eliminación del cáncer del cuello uterino como problema de salud pública</b>, propuesta oficialmente por la OMS en noviembre 2020, plantea alcanzar las <b>metas 90-70-90</b> para 2030, de modo que los países miembros se encuentren orientados hacia la eliminación del cáncer del cuello uterino, mediante:
             </p>
 
-            <div class="container grafico-container my-4">
+            <div class="container grafico-container my-4 ">
               <img src="assets/img/5_1.png" alt="Gráfico 90-70-90" class="grafico-img">
 
-              <div class="texto-superior">
+              <div class="texto-superior ">
                 de las mujeres examinadas mediante una prueba de alta precisión antes de los 35 años y una vez más, antes de los 45.
               </div>
 
