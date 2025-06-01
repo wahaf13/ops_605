@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>OPS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <style>
+     .contenedor-imagen {
+      position: relative;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .imagen-base {
+      width: 100%;
+      height: auto;
+    }
+
+    .icono-clic {
+      position: absolute;
+      width: 95px;
+      height:95px;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .icono-clic:hover {
+      transform: scale(1.1); 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+      z-index: 10;
+    }
+
+    .icono-tabaquismo { top: 15px; left: 80px;  }
+    .icono-educacion   { top: 10px; right: 80px;  }
+    .icono-condon      { bottom: 120px; right: 20px;  }
+    .icono-microbiota  { bottom: 20px; left: 165px;  }
+    .icono-actividad   { bottom: 120px; left: 20px;   }
+
+  </style>
+</head>
+<body>
+  <main role="main" class="container-fluid pl-0 pr-0 ml-1 mr-1 container_01">
+      <div class="row contenido ml-1 mr-1 pt-0">
+        <div class="col-md-12">
+            <p class="titulo">
+              1. Promoción de la Salud y Prevención Primaria
+            </p>
+            <p class="texto_01">
+              Da clic en los íconos y explora algunas de las medidas de protección para evitar la infección por VPH:
+            </p>
+
+            <div class="contenedor-imagen">
+              <img src="assets/img/3_1.png" alt="Íconos" class="imagen-base">
+
+              <!-- Divs clicables para cada ícono -->
+              <div class="icono-clic icono-tabaquismo" data-toggle="modal" data-target="#modal1"></div>
+              <div class="icono-clic icono-educacion" data-toggle="modal" data-target="#modal2"></div>
+              <div class="icono-clic icono-condon" data-toggle="modal" data-target="#modal3"></div>
+              <div class="icono-clic icono-microbiota" data-toggle="modal" data-target="#modal4"></div>
+              <div class="icono-clic icono-actividad" data-toggle="modal" data-target="#modal5"></div>
+            </div>
+
+        </div>
+
+      </div><!-- row contenido ml-5 mr-5 pt-3 -->
+
+      <div class="row "><!-- pie -->
+        <div class="col-md-10 text-center">
+          <span style="font-size: 10px; font-family: NotoSans; ">Página 3 de 12</span>
+        </div>
+        <div class="col-md-12 d-flex justify-content-around align-items-start">
+          <div class="col-lg-10 col-md-10 col-sm-12 text-right ">
+            <div class="col-md-12 pie d-flex justify-content-center">
+              <a href="2.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/atras.png" alt="atrás" style="width: 80%;">
+              </a>
+              <a href="index.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/inicio.png" alt="inicio" style="width: 80%;">
+              </a>
+              <a href="4.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/sig.png" alt="Sig" style="width: 80%;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-12 text-right">
+            <img class="img-fluid mr-5" src="../assets/img/logo_04.png"  alt="">
+          </div>
+        </div>
+      </div><!-- pie -->
+ 
+    </main><!-- /.container -->
+
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" style="border-radius: 20px;">
+      <div class="modal-content" style="background-color: #98989A; font-family:NotoSans;color:#FFF">
+        
+        <div class="modal-body p-3">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true" style="color:#FFF;">&times;</span>
+          </button>
+          <p class="ml-3 p-3">
+            <br>
+            <b>Evitar el tabaquismo</b> y el consumo de alcohol, ya que incrementan el riesgo de persistencia del VPH.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" style="border-radius: 20px;">
+      <div class="modal-content" style="background-color: #611232; font-family:NotoSans;color:#FFF">
+        
+        <div class="modal-body p-3">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true" style="color:#FFF;">&times;</span>
+          </button>
+          <p class="ml-3 p-3">
+            <br>
+            <b>Educación</b> sobre <b>sexualidad</b> plena, libre, segura y responsable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3-->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+    <div class="modal-dialog" style="border-radius: 20px;">
+      <div class="modal-content" style="background-color: #161a1d; font-family:NotoSans;color:#FFF">
+        
+        <div class="modal-body p-3">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true" style="color:#FFF;">&times;</span>
+          </button>
+          <p class="ml-3 p-3">
+            <br>
+            <b>Uso correcto y consistente del condón</b> interno (femenino) y externo (masculino) en todas las relaciones sexuales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4-->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="ModalLabel4" aria-hidden="true">
+    <div class="modal-dialog" style="border-radius: 20px;">
+      <div class="modal-content" style="background-color: #e6d194; font-family:NotoSans;color:#FFF">
+        
+        <div class="modal-body p-3">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true" style="color:#FFF;">&times;</span>
+          </button>
+          <p class="ml-3 p-3">
+            <br>
+            Mantener una <b>microbiota vaginal saludable</b> mediante una alimentación equilibrada, entre otras medidas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5-->
+  <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="ModalLabel5" aria-hidden="true">
+    <div class="modal-dialog" style="border-radius: 20px;">
+      <div class="modal-content" style="background-color: #161a1d; font-family:NotoSans;color:#FFF">
+        
+        <div class="modal-body p-3">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true" style="color:#FFF;">&times;</span>
+          </button>
+          <p class="ml-3 p-3">
+            <br>
+            Práctica regular de <b>actividad física</b> como medida de fortalecimiento del sistema inmunológico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Scripts necesarios para Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
