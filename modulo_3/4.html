@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>OPS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <style>
+    .contenedor-principal {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+   
+    .caja-central {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    
+    .caja-1, .caja-2, .caja-3, .caja-4 {
+      position: absolute;
+      /* width: 140px;
+      height: 140px;
+      border: 2px solid black;*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2; /* Encima de la central */
+    }
+
+    .caja-1 { top: 17%; left: 22%; transform: translateY(-22%); }
+    .caja-2 { top: 17%; right: 22%; transform: translateY(-22%); }
+    .caja-3 { bottom: 20%; left: 22%; transform: translateY(22%); }
+    .caja-4 { bottom: 20%; right: 22%; transform: translateY(22%); }
+
+ 
+    .boton-numero {
+      background-color: #ecd28f;
+      color: #946700;
+      font-weight: bold;
+      border: none;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+  <main role="main" class="container-fluid pl-0 pr-0 ml-1 mr-1 container_01">
+      <div class="row contenido ml-1 mr-1 pt-0">
+
+        <div class="col-md-12">
+
+            <p class="titulo">
+               2. Pruebas de detección molecular del VPH-AR
+            </p>
+            <p class="texto_01">
+              Da clic en los números para descubrir más información:
+            </p>
+
+            <div class="contenedor-principal">
+              <div class="caja caja-1">
+                <img src="assets/img/4_1.png" class="efeBtn" alt="" style="max-height: 170px;" data-toggle="modal" data-target="#modal1"  />
+              </div>
+              <div class="caja caja-2">
+                <img src="assets/img/4_2.png" class="efeBtn" alt="" style="max-height: 170px;" data-toggle="modal" data-target="#modal2" />
+              </div>
+
+              <div class="caja-central">
+                <!-- Puede ser fondo o incluir la imagen dentro -->
+                <img src="assets/img/4_5.png" alt="" style="max-height:400px;" />
+              </div>
+
+              <div class="caja caja-3">
+               <img src="assets/img/4_3.png" class="efeBtn" alt="" style="max-height: 110px;" data-toggle="modal" data-target="#modal3" />
+              </div>
+              <div class="caja caja-4">
+                <img src="assets/img/4_4.png" class="efeBtn" alt=""  style="max-height: 110px;" data-toggle="modal" data-target="#modal4" />
+              </div>
+            </div>
+
+        </div>
+
+      </div><!-- row contenido ml-5 mr-5 pt-3 -->
+
+      <div class="row "><!-- pie -->
+        <div class="col-md-10 text-center">
+          <span style="font-size: 10px; font-family: NotoSans; ">Página 4 de 9</span>
+        </div>
+        <div class="col-md-12 d-flex justify-content-around align-items-start">
+          <div class="col-lg-10 col-md-10 col-sm-12 text-right ">
+            <div class="col-md-12 pie d-flex justify-content-center">
+              <a href="3.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/atras.png" alt="atrás" style="width: 80%;">
+              </a>
+              <a href="index.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/inicio.png" alt="inicio" style="width: 80%;">
+              </a>
+              <a href="5.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/sig.png" alt="Sig" style="width: 80%;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-12 text-right">
+            <img class="img-fluid mr-5" src="../assets/img/logo_04.png"  alt="">
+          </div>
+        </div>
+      </div><!-- pie -->
+ 
+    </main><!-- /.container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+      <div class="modal-dialog" style="border-radius: 20px;">
+        <div class="modal-content" style="background-color: #e6d194; font-family:NotoSans;">
+          
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true" style="color:#000;">×</span>
+            </button>
+            <br>
+            <p class="ml-3 p-3">
+              <span style="font-family: Patria; font-size: 32px; color:#a57f2c ;">01</span><br>
+              Estas pruebas consisten en la <b>detección de ADN o ARNm del VPH-AR</b>, las técnicas moleculares <b>incluyen</b> la <b>hibridación de ácidos nucleicos</b> y la <b>reacción en cadena de la polimerasa  en tiempo real</b> (PCR-rt por sus siglas en inglés).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
+      <div class="modal-dialog" style="border-radius: 20px;">
+        <div class="modal-content" style="background-color: #e6d194; font-family:NotoSans;">
+          
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true" style="color:#000;">×</span>
+            </button>
+            <br>
+            <p class="ml-3 p-3">
+              <span style="font-family: Patria; font-size: 32px; color:#a57f2c ;">02</span><br>
+              Aunque las muestras provienen del mismo sitio anatómico, requieren de un <b>tratamiento específico, de acuerdo con la plataforma</b> en la que se realizará su análisis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+      <div class="modal-dialog" style="border-radius: 20px;">
+        <div class="modal-content" style="background-color: #e6d194; font-family:NotoSans;">
+          
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true" style="color:#000;">×</span>
+            </button>
+            <br>
+            <p class="ml-3 p-3">
+              <span style="font-family: Patria; font-size: 32px; color:#a57f2c ;">03</span><br>
+              La detección molecular del VPH-AR <b>permite la identificación</b> individual de los <b>genotipos 16 y 18</b>, mismos que se encuentran frecuentemente relacionados con el desarrollo de cáncer de cuello uterino.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="ModalLabel4" aria-hidden="true">
+      <div class="modal-dialog" style="border-radius: 20px;">
+        <div class="modal-content" style="background-color: #e6d194; font-family:NotoSans;">
+          
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true" style="color:#000;">×</span>
+            </button>
+            <br>
+            <p class="ml-3 p-3">
+              <span style="font-family: Patria; font-size: 32px; color:#a57f2c ;">04</span><br>
+              <b>La sensibilidad de esta prueba</b> de tamizaje para la detección de lesiones NIC2+ <b>se ha reportado en 95%;</b> mientras que su <b>especificidad, en 99%</b>. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Scripts necesarios para Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
