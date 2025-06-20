@@ -130,7 +130,7 @@
               <div class="d-flex align-items-center justify-content-between">
                 
                 <!-- Botón Anterior -->
-                <a href="#carouselCustom" role="button" data-slide="prev">
+                <a id="btnPrev" href="#carouselCustom" role="button" data-slide="prev">
                   <img src="assets/img/flecha02.png" alt="Anterior" style="height: 50px;">
                 </a>
 
@@ -261,20 +261,12 @@
                 </div>
 
                 <!-- Botón Siguiente -->
-                <a href="#carouselCustom" role="button" data-slide="next">
+                <a id="btnNext" href="#carouselCustom" role="button" data-slide="next">
                   <img src="assets/img/flecha01.png" alt="Siguiente" style="height: 50px;">
                 </a>
 
               </div>
             </div> 
-
-
-
-            
-            
-
-
-          
 
         </div>
 
@@ -321,6 +313,26 @@
       wrap: true        // Opcional
     });
     $('#carouselCustom').off('touchstart touchmove');
+
+    const carousel = document.getElementById('carouselCustom');
+    const btnPrev = document.getElementById('btnPrev');
+    const btnNext = document.getElementById('btnNext');
+
+    function updateArrowVisibility() {
+      const items = carousel.querySelectorAll('.carousel-item');
+      const activeIndex = Array.from(items).findIndex(item => item.classList.contains('active'));
+
+      btnPrev.style.visibility = (activeIndex === 0) ? 'hidden' : 'visible';
+      btnNext.style.visibility = (activeIndex === items.length - 1) ? 'hidden' : 'visible';
+    }
+
+    // Inicializa visibilidad al cargar
+    updateArrowVisibility();
+
+    // Escucha evento del carrusel
+    $('#carouselCustom').on('slid.bs.carousel', function () {
+      updateArrowVisibility();
+    });
 
   </script>
 
